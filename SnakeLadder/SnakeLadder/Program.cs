@@ -6,6 +6,7 @@
         {
             Console.WriteLine("Enter a particular number : ");
             Console.WriteLine("1 for Player position.");
+            Console.WriteLine("2 for rolling the dice");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -14,6 +15,11 @@
                     PlayerPos playerPosition = new PlayerPos();
                     playerPosition.PlayerPosition();
                     break;
+                case 2:
+                    DiceRoll roll = new DiceRoll();
+                    roll.Dice_Roll();
+                    break;
+
             }
         }
     }

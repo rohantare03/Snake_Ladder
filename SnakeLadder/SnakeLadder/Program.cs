@@ -11,6 +11,7 @@
             Console.WriteLine("4 for winning position");
             Console.WriteLine("5 for Win Position 100");
             Console.WriteLine("6 for finding the number of times dice was rolled");
+            Console.WriteLine("7 for finding Player Win");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -38,6 +39,13 @@
                 case 6:
                     DiceRollNumber diceRoll = new DiceRollNumber();
                     diceRoll.DiceRoll_Number();
+                    break;
+                case 7:
+                    PlayerWinning playerwin = new PlayerWinning();
+                    playerwin.PlayerWin();
+                    break;
+                default:
+                    Console.WriteLine("Enter a valid input");
                     break; 
 
             }

@@ -9,6 +9,7 @@
             Console.WriteLine("2 for rolling the dice");
             Console.WriteLine("3 for checking player option");
             Console.WriteLine("4 for winning position");
+            Console.WriteLine("5 for Win Position 100");
 
             int Problem = Convert.ToInt32(Console.ReadLine());
             switch (Problem)
@@ -29,6 +30,10 @@
                     WinningPosition winningPosition = new WinningPosition();
                     winningPosition.WinningPos();
                     break;
+                case 5:
+                    WinPosition100 winPosition = new WinPosition100();
+                    winPosition.WinPosition();
+                    break; 
 
             }
         }
